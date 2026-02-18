@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - ÉtoileCanine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header sticky">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">ÉtoileCanine</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="produit.html" class="nav-link">Boutique</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="panier.html" class="nav-link cart-link active">
+                        Panier <span class="cart-count">0</span>
+                    </a>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page panier -->
+    <section class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Mon Panier</h1>
+            
+            <div class="cart-content">
+                <!-- Liste des produits -->
+                <div class="cart-items" id="cart-items">
+                    <div class="cart-empty" id="cart-empty">
+                        <p>Votre panier est vide</p>
+                        <a href="produit.html" class="btn btn-primary">Découvrir nos produits</a>
+                    </div>
+                </div>
+
+                <!-- Résumé de commande -->
+                <div class="cart-summary">
+                    <h2 class="summary-title">Résumé de la commande</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Sous-total</span>
+                            <span id="subtotal">0 €</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Livraison</span>
+                            <span>Gratuite</span>
+                        </div>
+                        <div class="summary-row summary-total">
+                            <span>Total</span>
+                            <span id="total">0 €</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-checkout" id="checkout-btn" disabled>
+                        Procéder au paiement
+                    </button>
+                    <p class="checkout-note">Paiement sécurisé via Stripe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ÉtoileCanine</h3>
+                    <p>Fais briller ton chien la nuit 🌟</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            Instagram
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            TikTok
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <p>contact@etoilecanine.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ÉtoileCanine. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#mentions-legales">Mentions légales</a>
+                    <a href="#cgv">CGV</a>
+                    <a href="#politique-confidentialite">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
